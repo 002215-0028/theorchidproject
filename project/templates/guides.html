@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Mental Health Checkpoint!
+{% endblock %}
+
+{% block main %}
+<h4>Hi! This is a safe space to discover and educate yourself on the human brain and program it to feel your best! We hope this is helpful! </h4>
+<img src="static/anxiety.jpg" class="img-fluid">
+<img src="static/ed.jpg" class="img-fluid">
+<img src="static/0001.jpg" class="img-fluid">
+<img src="static/ptsd.jpg" class="img-fluid">
+<img src="static/burnout.jpg" class="img-fluid">
+
+<p></p>
+<form>
+  <div class="form-group">
+    <label>Feedback</label>
+    <input class="form-control" name = "feedback">
+    <small id="emailHelp" class="form-text text-muted">Any and all feedback is useful and important to us!</small>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

@@ -1,0 +1,56 @@
+body {
+    background-color: #DDBDCF;
+    border: #5B4481;
+    border-style: hidden;
+}
+p{
+    color: black;
+    text-align: center;
+}
+h3{
+    text-align: justify;
+    color: black;
+}
+.button{
+    background-color: #C5A1B6;
+    width: 200px;
+    
+}
+
+a:link {
+  color: #5B4481;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: purple;
+  background-color: transparent;
+}
+h1{
+  text-align: center;
+  text-decoration: underline;
+  color: #000000;
+  font-family: 'PlayfairDisplayRegular';
+    src: url('fonts/PlayfairDisplayRegular.eot');
+    src: url('fonts/PlayfairDisplayRegular.eot') format('embedded-opentype'),
+         url('fonts/PlayfairDisplayRegular.woff2') format('woff2'),
+         url('fonts/PlayfairDisplayRegular.woff') format('woff'),
+         url('fonts/PlayfairDisplayRegular.ttf') format('truetype'),
+         url('fonts/PlayfairDisplayRegular.svg#PlayfairDisplayRegular') format('svg');
+}
+h4{
+  text-align: center;
+  color: #000000;
+  font-family: 'PlayfairDisplayRegular';
+    src: url('fonts/PlayfairDisplayRegular.eot');
+    src: url('fonts/PlayfairDisplayRegular.eot') format('embedded-opentype'),
+         url('fonts/PlayfairDisplayRegular.woff2') format('woff2'),
+         url('fonts/PlayfairDisplayRegular.woff') format('woff'),
+         url('fonts/PlayfairDisplayRegular.ttf') format('truetype'),
+         url('fonts/PlayfairDisplayRegular.svg#PlayfairDisplayRegular') format('svg');
+}

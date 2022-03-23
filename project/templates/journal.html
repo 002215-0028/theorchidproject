@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Journal
+{% endblock %}
+
+{% block main %}
+    <p>{{message}}</p>
+    <form action="/journal" method="post">
+        
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="answer1" placeholder="How do I feel right now?" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="answer2" placeholder="What are the 3 things I’m grateful for today?" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="answer3" placeholder="What are the 3 things I’m excited to do today?" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="answer4" placeholder="What is one bad habit that I am working hard to break? How am I going to place myself in a position to break that habit?" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="answer5" placeholder="How do I want to feel when I go to bed tonight?" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Well Done!</button>
+    </form>
+{% endblock %}

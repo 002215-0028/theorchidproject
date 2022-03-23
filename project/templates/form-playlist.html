@@ -1,0 +1,146 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Find a Playlist
+{% endblock %}
+{% block head %}
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('#submit').addEventListener('click', function(){
+      let answer1 = document.querySelector('#answer1');
+      let answer2 = document.querySelector('#answer2');
+      let answer3 = document.querySelector('#answer3');
+      let answer4 = document.querySelector('#answer4');
+      let answer5 = document.querySelector('#answer5');
+      let answer6 = document.querySelector('#answer6');
+      let answer7 = document.querySelector('#answer7');
+      let answer8 = document.querySelector('#answer8');
+      document.write("<!-- http://getbootstrap.com/docs/4.5/ --> <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css' integrity='sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2' crossorigin='anonymous'><link href='/static/styles.css' rel='stylesheet'><link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap' rel='stylesheet'><!-- http://getbootstrap.com/docs/4.5/ -->")
+      document.write("<nav class='navbar navbar-light' style='background-color: #C798B8;'><button aria-controls='navbar' aria-expanded='true' aria-label='Toggle navigation' class='navbar-toggler' data-target='#navbar' data-toggle='collapse' type='button'><span class='navbar-toggler-icon'></span></button><div class='collapse navbar-collapse' id='navbar'><ul class='navbar-nav mr-auto mt-2'><li class='nav-item'><a class='nav-link' href='/'>Home</a></li><li class='nav-item'><a class='nav-link' href='/form'>Find A Playlist!</a></li><li class='nav-item'><a class='nav-link' href='/aboutUs'>About Us</a></li><li class='nav-item'><a class='nav-link' href='/journal'>Journal</a></li><li class='nav-item'><a class='nav-link' href='/selfhelp'>Self Check In</a></li></ul><ul class='navbar-nav ml-auto mt-2'><li class='nav-item'><a class='nav-link' href='/logout'>Log Out</a></li></ul></div></nav>")
+      if (answer1.value === 'yes'){
+        document.write("<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLHCWXhnneW-xWvikwolJBCgGE54S1Huqh' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
+        document.write("<p>Upbeat Pop</p>")
+      }
+      if (answer2.value === 'option2'){
+        document.write("<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLHCWXhnneW-yP4eZWLP3omMKiUuN8BWfD' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
+        document.write("<p>Chill Pop</p>")
+      }
+      if (answer3.value === 'option1' || answer3.value === 'option2'){
+        document.write("<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLHCWXhnneW-yYLbPk8s_yZMXMNc0UAJvK' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
+        document.write("<p>Rap and Hip Hop</p>")
+      }
+      if (answer4.value === 'yes'){
+        document.write("<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLHCWXhnneW-zvQwqFJZcSqY2uy716R9Cv' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
+        document.write("<p>Rock</p>")
+      }
+      if (answer5.value === 'option1' || answer5.value === 'option2' || answer5.value === 'option6'){
+        document.write("<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLHCWXhnneW-yG_m6ok9LtrDmhTlYUFdyJ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
+        document.write("<p>Alternative</p>")
+      }
+      if (answer6.value === 'option1' || answer6.value === 'option2' || answer6.value === 'option3'){
+        document.write("<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLHCWXhnneW-zVT3NIZvuZSX6DMVMk-Le5' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
+        document.write("<p>RnB</p>")
+      }
+      if (answer7.value === 'option1'){
+        document.write("<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLHCWXhnneW-zTFE7IX-GGbO_8-IkNTGRS' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
+        document.write("<p>EDM</p>")
+      }
+      if (answer8.value === 'option4' || answer8.value === 'option5'){
+        document.write("<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLHCWXhnneW-zcBSDBSSAR2oBOSLdprHPG' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
+        document.write("<p>Country</p>")
+      }
+      document.write("<nav class='navbar fixed-bottom navbar-light bg-light'><a class='navbar-brand' href='https://www.instagram.com/_theorchidproject/?hl=en'>Instagram: @_theorchidproject</a></nav>")
+    });
+  });
+</script>
+{% endblock %}
+
+{% block main %}
+<h1>Find a Playlist!</h1>
+<h4>{{message}}</h4>
+<form method="post">
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Would you describe yourself as extroverted?</label>
+    <select class="form-control" id = "answer1">
+      <option disabled selected value="">answer</option>
+      <option value = "yes">yes</option>
+      <option value  = "no" >no</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">What impact does upbeat music have on your focus?</label>
+    <select class="form-control" id = "answer2">
+      <option disabled selected value="">answer</option>
+      <option value = "option1">strengthens it</option>
+      <option value = "option2" >upbeat music is distracting for me</option>
+      <option value = "option3" >I have never paid attention to it/ I have never tried it</option>
+    </select>
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">How often do you socialise/go out?</label>
+    <select class="form-control" id = "answer3">
+      <option disabled selected value="">answer</option>
+      <option value = "option1">everyday</option>
+      <option value = "option2" >every week</option>
+      <option value = "option3" >every month</option>
+      <option value = "option4" >can not remember</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Would you describe yourself as artistic and creative?</label>
+    <select class="form-control" id = "answer4">
+      <option disabled selected value="">answer</option>
+      <option value = "yes">yes</option>
+      <option value = "no" >no</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">What do you do in your free time?</label>
+    <select class="form-control" id = "answer5">
+      <option disabled selected value="">answer</option>
+      <option value = "option1">study</option>
+      <option value = "option2" >read a book</option>
+      <option value = "option3" >watch tv</option>
+      <option value = "option4" >go out</option>
+      <option value = "option5" >sleep</option>
+      <option value = "option6" >cook/bake</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">What word describes you best?</label>
+    <select class="form-control" id = "answer6">
+      <option disabled selected value="">answer</option>
+      <option value = "option1">adventurous</option>
+      <option value = "option2" >open-minded</option>
+      <option value = "option3" >risk-taker</option>
+      <option value = "option4" >antisocial</option>
+      <option value = "option5" >studious</option>
+      <option value = "option6" >lazy</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">How often do you party or go dancing?</label>
+    <select class="form-control" id = "answer7">
+      <option disabled selected value="">answer</option>
+      <option value = "option1">very often</option>
+      <option value = "option2">sometimes</option>
+      <option value = "option3">never</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">How many hours do you spend studying in a day?</label>
+    <select class="form-control" id = "answer8">
+      <option disabled selected value="">answer</option>
+      <option value = "option1">less than an hour</option>
+      <option value = "option2" >one to two hours</option>
+      <option value = "option3" >two to four hours</option>
+      <option value = "option4" >four to six hours</option>
+      <option value = "option5" >more than six hours</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary" id = 'submit'>Submit</button>
+</form>
+{% endblock %}
