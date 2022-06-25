@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1022322078492-p8aprkfjpq09ptpt9p3ks1h9342qbai2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1022322078492-p8aprkfjpq09ptpt9p3ks1h9342qbai2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAJK7PojwrlsE80kh1Hqc4tG1yOVBBJu-k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1022322078492</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.theorchidproject.app</string>
+	<key>PROJECT_ID</key>
+	<string>the-orchid-project</string>
+	<key>STORAGE_BUCKET</key>
+	<string>the-orchid-project.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1022322078492:ios:d5e9fea04bd3d65f3040d9</string>
+</dict>
+</plist>
